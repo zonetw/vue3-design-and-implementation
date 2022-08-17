@@ -21,7 +21,7 @@ const obj = new Proxy(data, {
     target[key] = newVal;
     trigger(target, key);
     return true;
-  }
+  },
 });
 
 function track(target, key) {
